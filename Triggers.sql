@@ -21,7 +21,8 @@ FOR EACH ROW
 DECLARE RENT_DIFF number:= 0;
 BEGIN
 RENT_DIFF := :NEW.a_rent - :OLD.a_rent;
+RENT_DIFF := :NEW.a_rent - :OLD.a_rent;
 DBMS_OUTPUT.PUT_LINE ('The old Rent was: '||:OLD.a_rent);
-DBMS_OUTPUT.PUT_LINE ('The old Rent fee was: '||:NEW.a_rent);
+DBMS_OUTPUT.PUT_LINE ('The new Rent is: '||:NEW.a_rent);
 DBMS_OUTPUT.PUT_LINE ('The difference in Rent IS: '||RENT_DIFF);
 END;
