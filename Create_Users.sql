@@ -18,7 +18,7 @@ grant update on managements to mgmtadmin;
 
 ----USER 3----------------------------------------------------------------------
 
-call remove_objects('univadmin','USER');
+call remove_objects('brokeradmin','USER');
 CREATE USER brokeradmin IDENTIFIED BY "Flamingo@123";
 grant create session to brokeradmin;
 grant select on apartment_listings to brokeradmin;
